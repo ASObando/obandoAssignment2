@@ -7,9 +7,9 @@
 function config($key = '')
 {
     $config = [
-        'name' => 'Video Game History ',
+        'name' => 'XKCD Comic ',
         'pretty_uri' => false,
-        'site_url' =>'https://anthony-obando-assignment-1.herokuapp.com/' , //'https://csuphpdemo.herokuapp.com'
+        'site_url' =>'https://anthony-obando-assignment2.herokuapp.com/' , //'https://csuphpdemo.herokuapp.com'
         'nav_menu' => [
             '' => 'Overview',
             'random-comic' => 'Random Comic',
