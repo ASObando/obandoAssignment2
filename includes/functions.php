@@ -65,7 +65,7 @@ function page_content()
  */
 function init()
 {
-    require config('template_path') . '/index.php';
+    require config('template_path') . '/template.php';
 }
 
 function getComic(){
