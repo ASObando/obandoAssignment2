@@ -9,7 +9,7 @@
 <?php
 include 'content/random-comic.phtml';
 ?>
-    <title>XKGC comic generator</title>
+    <title>XKCD comic generator</title>
   <link href="https://use.fontawesome.com/f1c966bcb4.css" media="all" rel="stylesheet"></head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
