@@ -19,7 +19,9 @@
          <li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/">Home</a></li><li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/template/comic.php">Random Comic</a></li>        </ul>
       </div>
     </nav>
-   <p>Your random comic goes here.</p>
+    <?php
+   echo '<p>Your random comic goes here.</p>';
+   ?>
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Fixed bottom NavBar to get back to where you need</a>
     </nav>
