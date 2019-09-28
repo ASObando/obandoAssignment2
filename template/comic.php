@@ -20,6 +20,7 @@
       </div>
     </nav>
 <?php
+include 'content/home.phtml';
 include 'content/comic.phtml';
 ?>
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
