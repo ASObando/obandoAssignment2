@@ -77,8 +77,7 @@ function getComic(){
     curl_setopt_array($handle,
     array(
     CURLOPT_URL => $url,
-    CURLOPT_RETURNTRANSFER => true
-        )
+LOPT=> t       )
 );
 $output = curl_exec($handle);
 $response = json_decode($output, true);
