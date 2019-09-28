@@ -19,9 +19,9 @@
          <li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/">Home</a></li><li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/template/comic.php">Random Comic</a></li>        </ul>
       </div>
     </nav>
-    <?php
-    include 'content/comic.phtml';
-    ?>
+<?php
+include 'content/comic.phtml';
+?>
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Fixed bottom NavBar to get back to where you need</a>
     </nav>
