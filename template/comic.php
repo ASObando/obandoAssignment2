@@ -19,7 +19,7 @@ include 'content/random-comic.phtml';
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-         <li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/">Home</a></li><li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/?page=random-comic">Random Comic</a></li>        </ul>
+         <li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/">Home</a></li><li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/templae/comic.php">Random Comic</a></li>        </ul>
       </div>
     </nav>
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
