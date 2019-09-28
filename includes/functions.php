@@ -65,4 +65,23 @@ function init()
 {
     require config('template_path') . '/template.php';
 }
+
+function getComic(){
+    $url = XKCDURL;
+/**dont change
+*/
+    $handle = curl_init();
+    curl_setopt($handle, CURLOPT_URL, $url);
+    curl_setopt_array($handle,
+    array(
+    CURLOPT_URL => $url,
+    CURLOPT_RETURNTRANSFER => true
+        )
+);
+$output = curl_exec($handle);
+$response = json_decode($output, true);
+curl_close($handle);
+/*dont change
+*/
+}
 ?>

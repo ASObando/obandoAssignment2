@@ -1,1 +1,21 @@
 <p>The comic of the day goes here</p>
+
+<script>
+     $('#testButton').click(function (e){
+          $.ajax({
+              type: 'post',
+              url: "/includes/handleRand.php",
+              data: {'random' : true},
+              dataType:"HTML", // May be HTML or JSON as your wish
+              success: function(data)
+              {
+                  $('div #target_div').html(data) // The server's response is now placed inside your target div
+              },
+              error: function()
+              {
+                  alert("Failed to get data.");
+            }
+          }); // Ajax close
+          return false; // So the button click does not refresh the page
+      }) // Function end
+</script>
