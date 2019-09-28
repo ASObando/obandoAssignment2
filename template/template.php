@@ -8,13 +8,13 @@
   <link href="https://use.fontawesome.com/f1c966bcb4.css" media="all" rel="stylesheet"></head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <a class="navbar-toggler navbar-brand" href="https://csuphpdemo.herokuapp.com/"><i class="fa fa-2x fa-home"></i></a>
+      <a class="navbar-toggler navbar-brand" href="https://anthony-obando-assignment2.herokuapp.com/"><i class="fa fa-2x fa-home"></i></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-         <li class="nav-item"><a class="nav-link" tabindex="-1" href="https://csuphpdemo.herokuapp.com/">Home</a></li><li class="nav-item"><a class="nav-link" tabindex="-1" href="https://csuphpdemo.herokuapp.com/?page=contact">Random Comic</a></li>        </ul>
+         <li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/">Home</a></li><li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/">Random Comic</a></li>        </ul>
       </div>
     </nav>
 <div class="wrap">
