@@ -1,23 +1,14 @@
-<div class="jumbotron">
-    <h1>Welcome to the XKCD comic generator</h1>
-</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-toggler navbar-brand" href="https://anthony-obando-assignment2.herokuapp.com/"><i class="fa fa-2x fa-home"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+         <li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/">Home</a></li><li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/?page=random-comic">Random Comic</a></li>        </ul>
+      </div>
+    </nav>
 
-<script>
-     $('#testButton').click(function (e){
-          $.ajax({
-              type: 'post',
-              url: "/includes/handleRand.php",
-              data: {'random' : true},
-              dataType:"HTML", // May be HTML or JSON as your wish
-              success: function(data)
-              {
-                  $('div #target_div').html(data) // The server's response is now placed inside your target div
-              },
-              error: function()
-              {
-                  alert("Failed to get data.");
-            }
-          }); // Ajax close
-          return false; // So the button click does not refresh the page
-      }) // Function end
-</script>
+<div class="jumbotron">
+  <h1> Welcome to the XKGC comic generator</h1>
+</div>
