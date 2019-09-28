@@ -20,3 +20,4 @@ function config($key = '')
     ];
     return isset($config[$key]) ? $config[$key] : null;
 }
+?>
