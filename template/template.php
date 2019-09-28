@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <?php
 include 'content/home.phtml';
+include 'content/random-comic.phtml';
 ?>
     <title>XKGC comic generator</title>
   <link href="https://use.fontawesome.com/f1c966bcb4.css" media="all" rel="stylesheet"></head>
