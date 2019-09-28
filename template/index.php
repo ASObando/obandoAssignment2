@@ -19,7 +19,7 @@ include 'content/home.phtml';
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-         <li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/">Home</a></li><li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/template/comic.php">Random Comic</a></li>        </ul>
+         <li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/">Home</a></li><li class="nav-item"><a class="nav-link" tabindex="-1" href="https://anthony-obando-assignment2.herokuapp.com/?page=comic">Random Comic</a></li>        </ul>
       </div>
     </nav>
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
