@@ -14,7 +14,7 @@ function config($key = '')
             '' => 'Overview',
             'random-comic' => 'Random Comic',
         ],
-        'template_path' => 'template',
+        'template_path' => 'index',
         'content_path' => 'content',
         'version' => 'v1.0',
     ];
