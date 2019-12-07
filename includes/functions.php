@@ -23,19 +23,17 @@ function site_version()
 /**
  * Website navigation.
  */
- /**
-*function nav_menu($sep = ' | ')
-*{
-*    $nav_menu = '';
-*    $nav_items = config('nav_menu');
-*    foreach ($nav_items as $uri => $name) {
-*        $class = str_replace('page=', '', $_SERVER['QUERY_STRING']) == $uri ? ' active' : '';
-*        $url = config('site_url') . '/' . (config('pretty_uri') || $uri == '' ? '' : '?page=') . $uri;
-*        $nav_menu .= '<a href="' . $url . '" title="' . $name . '" class="item ' . $class . '">' . $name . '</a>' . $sep;
-*    }
-*    echo trim($nav_menu, $sep);
-*}
-*/
+function nav_menu($sep = ' | ')
+{
+    $nav_menu = '';
+    $nav_items = config('nav_menu');
+    foreach ($nav_items as $uri => $name) {
+        $class = str_replace('page=', '', $_SERVER['QUERY_STRING']) == $uri ? ' active' : '';
+        $url = config('site_url') . '/' . (config('pretty_uri') || $uri == '' ? '' : '?page=') . $uri;
+        $nav_menu .= '<a href="' . $url . '" title="' . $name . '" class="item ' . $class . '">' . $name . '</a>' . $sep;
+    }
+    echo trim($nav_menu, $sep);
+}
 /**
  * Displays page title. It takes the data from
  * URL, it replaces the hyphens with spaces and
@@ -54,35 +52,64 @@ function page_title()
 function page_content()
 {
     $page = isset($_GET['page']) ? $_GET['page'] : 'home';
-    $path = getcwd() . '/' . config('content_path') . '/' . $page . '.phtml';
+    $path = getcwd() . '/' . config('content_path') . '/' . $page . '.php';
     if (! file_exists($path)) {
-        $path = getcwd() . '/' . config('content_path') . '/404.phtml';
-    }
-    echo file_get_contents($path);
+        $path = getcwd() . '/' . config('content_path') . '/404.php';
+    }/*
+    echo file_get_contents($path);*/
+    require config('config_path'). $path;
 }
 /**
  * Starts everything and displays the template.
  */
 function init()
 {
-    require config('template_path') . '/index.php';
+    require config('template_path') . '/template.php';
 }
-
+/**Function for getting the comic title and date */
 function getComic(){
-    $url = XKCDURL;
+$url = 'https://xkcd.com/info.0.json';
 /**dont change
 */
-    $handle = curl_init();
-    curl_setopt($handle, CURLOPT_URL, $url);
-    curl_setopt_array($handle,
-    array(
-    CURLOPT_URL => $url,
-LOPT=> t       )
+$handle = curl_init();
+curl_setopt($handle, CURLOPT_URL, $url);
+curl_setopt_array($handle,
+array(
+CURLOPT_URL => $url,
+CURLOPT_RETURNTRANSFER => true
+)
 );
 $output = curl_exec($handle);
 $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
+echo '<div class="d-flex justify-content-center"><h1>' . $response["title"] . '</h1></div> ';
+echo '<br>';
+echo '<div class="d-flex justify-content-center"><h4>' . $response["month"] . '/' . $response["day"] . '/'. $response["year"] . '</h4></div><br>';
+echo '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div><br>';
+}
+function getComicRand(){
+$randNum = rand(1,2208);
+$url = 'https://xkcd.com/'. $randNum. '/'.'info.0.json';
+/**dont change
+*/
+$handle = curl_init();
+curl_setopt($handle, CURLOPT_URL, $url);
+curl_setopt_array($handle,
+array(
+CURLOPT_URL => $url,
+CURLOPT_RETURNTRANSFER => true
+)
+);
+$output = curl_exec($handle);
+$response = json_decode($output, true);
+curl_close($handle);
+/*dont change
+*/
+echo '<div><h1>' . $response["title"] . '</h1></div>';
+echo '<br>';
+echo '<h4>' . $response["month"] . '/' . $response["day"] . '/'. $response["year"] . '</h4>';
+echo '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div>';
 }
 ?>

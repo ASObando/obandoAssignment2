@@ -9,14 +9,14 @@ function config($key = '')
     $config = [
         'name' => 'XKCD Comic ',
         'pretty_uri' => false,
-        'site_url' =>'https://anthony-obando-assignment2.herokuapp.com/' , //'https://csuphpdemo.herokuapp.com'
+        'site_url' =>'https://anthony-obando-assignment2.herokuapp.com/' , 
         'nav_menu' => [
-            '' => 'Overview',
-            'comic' => 'Random Comic',
+            '' => 'Current Comic',
+            'random' => 'Random Comic',
         ],
         'template_path' => 'template',
         'content_path' => 'content',
-        'version' => 'v1.0',
+        'version' => 'v2.0',
     ];
     return isset($config[$key]) ? $config[$key] : null;
 }
