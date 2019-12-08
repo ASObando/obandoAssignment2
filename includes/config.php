@@ -11,7 +11,7 @@ function config($key = '')
         'pretty_uri' => false,
         'site_url' =>'https://anthony-obando-assignment2.herokuapp.com/' , 
         'nav_menu' => [
-            '' => 'Current Comic',
+            'home' => 'Current Comic',
             'comic' => 'Random Comic',
         ],
         'template_path' => 'template',
