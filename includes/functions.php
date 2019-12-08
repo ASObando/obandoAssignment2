@@ -88,6 +88,7 @@ echo '<br>';
 echo '<div class="d-flex justify-content-center"><h4>' . $response["month"] . '/' . $response["day"] . '/'. $response["year"] . '</h4></div><br>';
 echo '<div class="d-flex justify-content-center"> <img src = ' . $response["img"] .'></div><br>';
 }
+
 function getComicRand(){
 $randNum = rand(1,2238);
 $url = 'https://xkcd.com/'. $randNum. '/'.'info.0.json';
