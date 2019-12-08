@@ -25,7 +25,7 @@
     </ul>
   </div>
 </nav>
-<div class="jumbotron"> <h1>Comics!</h1> </div>
+<div class="jumbotron"> <h1>XKCD Comic Generator</h1> </div>
 <?php page_content();?>
 
     <!-- Optional JavaScript -->
